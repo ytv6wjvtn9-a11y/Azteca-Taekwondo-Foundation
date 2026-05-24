@@ -1,0 +1,1 @@
+Upload everything in this folder directly to your GitHub repo root. GitHub repo should show index.html, coaches.html, competition.html, style.css, and static/.

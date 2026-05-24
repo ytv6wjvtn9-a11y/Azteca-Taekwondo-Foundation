@@ -732,3 +732,12 @@ html, body{
         justify-content: center !important;
     }
 }
+.schedule-card p {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+.schedule-card br {
+    display: block;
+    margin-bottom: 10px;
+}

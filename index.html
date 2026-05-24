@@ -255,63 +255,63 @@
 <!-- ========================= -->
 
 <script>
+function changeText(id, text, html = false) {
+    const item = document.getElementById(id);
+
+    if (item) {
+        if (html) {
+            item.innerHTML = text;
+        } else {
+            item.innerText = text;
+        }
+    }
+}
 
 function setLanguage(language) {
-
     if (language === 'es') {
+        changeText("nav-home", "Inicio");
+        changeText("nav-classes", "Clases");
+        changeText("nav-coaches", "Entrenadores");
+        changeText("nav-about", "Nosotros");
 
-        document.getElementById("nav-home").innerText = "Inicio";
-        document.getElementById("nav-classes").innerText = "Clases";
-        document.getElementById("nav-coaches").innerText = "Entrenadores";
-        document.getElementById("nav-about").innerText = "Nosotros";
+        changeText("hero-title", "Disciplina. Fuerza. Elegancia.");
+        changeText("hero-text", "Experiencia de Taekwondo inspirada en lujo.");
 
-        document.getElementById("hero-title").innerText = "Disciplina. Fuerza. Elegancia.";
-        document.getElementById("hero-text").innerText = "Experiencia de Taekwondo inspirada en lujo.";
+        changeText("schedule-title", "Horario de Clases");
+        changeText("regular-title", "Clases Regulares");
+        changeText("regular-text1", "<strong>Lunes</strong><br>5–6 PM / 6–7 PM / 7–8 PM", true);
+        changeText("regular-text2", "<strong>Miércoles</strong><br>5–6 PM / 6–7 PM / 7–8 PM", true);
+        changeText("regular-text3", "<strong>Viernes</strong><br>5–6 PM / 6–7 PM / 7–8 PM", true);
 
-        document.getElementById("schedule-title").innerText = "Horario de Clases";
-        document.getElementById("regular-title").innerText = "Clases Regulares";
-        document.getElementById("regular-text1").innerHTML =
-"<strong>Lunes</strong><br>5–6 PM / 6–7 PM / 7–8 PM";
+        changeText("competition-title", "Sparring Competitivo");
+        changeText("competition-text1", "<strong>Martes</strong><br>6–8 PM", true);
+        changeText("competition-text2", "<strong>Jueves</strong><br>6–8 PM", true);
 
-document.getElementById("regular-text2").innerHTML =
-"<strong>Miércoles</strong><br>5–6 PM / 6–7 PM / 7–8 PM";
+        changeText("coaches-title", "Nuestros Entrenadores");
+        changeText("coaches-text1", "Dirigido por el Gran Maestro German López Alvarez, nuestro equipo de entrenadores está dedicado a enseñar disciplina, liderazgo, confianza y excelencia en artes marciales.");
+        changeText("coach-button", "Conocer Entrenadores");
 
-document.getElementById("regular-text3").innerHTML =
-"<strong>Viernes</strong><br>5–6 PM / 6–7 PM / 7–8 PM";
+        changeText("sparring-title", "Equipo de Competencia");
+        changeText("sparring-text", "Nuestros estudiantes de competencia entrenan duro, se apoyan mutuamente y representan con orgullo a Azteca TKD en torneos y eventos.");
+        changeText("sparring-text2", "A través del entrenamiento de combate y la experiencia en competencias, los estudiantes desarrollan confianza, disciplina, perseverancia, trabajo en equipo y una fuerte técnica de artes marciales.");
+        changeText("sparring-text3", "Los estudiantes se desafían a crecer física y mentalmente mientras desarrollan liderazgo, deportividad y determinación dentro y fuera del ring.");
+        changeText("sparring-button", "Equipo de Competencia");
 
-        document.getElementById("competition-title").innerText = "Sparring Competitivo";
-        document.getElementById("competition-text1").innerHTML =
-"<strong>Martes</strong><br>6–8 PM";
+        changeText("about-title", "Sobre Nosotros");
+        changeText("about-text1", "Azteca Tae Kwon Do Foundation está dedicada a la disciplina, liderazgo, cultura y excelencia en Taekwondo.");
+        changeText("about-text2", "Fundada por el Gran Maestro German López, la escuela ha entrenado generaciones de estudiantes y competidores.");
+        changeText("about-text3", "Nuestros programas se enfocan en desarrollar confianza, respeto y condición física.");
+        changeText("about-text4", "Nuestra escuela promueve respeto, perseverancia, disciplina y liderazgo.");
+        changeText("about-text5", "Damos la bienvenida a estudiantes de todas las edades y niveles.");
+        changeText("about-text6", "A través del entrenamiento tradicional y sparring competitivo, los estudiantes desarrollan fuerza física y enfoque mental.");
+        changeText("about-text7", "Azteca TKD continúa inspirando futuras generaciones mediante dedicación y pasión por la excelencia.");
 
-document.getElementById("competition-text2").innerHTML =
-"<strong>Jueves</strong><br>6–8 PM";
-        document.getElementById("coaches-title").innerText = "Nuestros Entrenadores";
-        document.getElementById("coaches-text1").innerText = "Dirigido por el Gran Maestro German López Alvarez, nuestro equipo de entrenadores está dedicado a enseñar disciplina, liderazgo, confianza y excelencia en artes marciales.";
-        document.getElementById("coach-button").innerText = "Conocer Entrenadores";
-
-        document.getElementById("sparring-title").innerText = "Equipo de Competencia";
-        document.getElementById("sparring-text").innerText = "Nuestros estudiantes de competencia entrenan duro, se apoyan mutuamente y representan con orgullo a Azteca TKD en torneos y eventos.";
-        document.getElementById("sparring-text2").innerText = "A través del entrenamiento de combate y la experiencia en competencias, los estudiantes desarrollan confianza, disciplina, perseverancia, trabajo en equipo y una fuerte técnica de artes marciales.";
-        document.getElementById("sparring-text3").innerText = "Los estudiantes se desafían a crecer física y mentalmente mientras desarrollan liderazgo, deportividad y determinación dentro y fuera del ring.";
-        document.getElementById("sparring-button").innerText = "Equipo de Competencia";
-
-        document.getElementById("about-title").innerText = "Sobre Nosotros";
-        document.getElementById("about-text1").innerText = "Azteca Tae Kwon Do Foundation está dedicada a la disciplina, liderazgo, cultura y excelencia en Taekwondo.";
-        document.getElementById("about-text2").innerText = "Fundada por el Gran Maestro German López, la escuela ha entrenado generaciones de estudiantes y competidores.";
-        document.getElementById("about-text3").innerText = "Nuestros programas se enfocan en desarrollar confianza, respeto y condición física.";
-        document.getElementById("about-text4").innerText = "Nuestra escuela promueve respeto, perseverancia, disciplina y liderazgo.";
-        document.getElementById("about-text5").innerText = "Damos la bienvenida a estudiantes de todas las edades y niveles.";
-        document.getElementById("about-text6").innerText = "A través del entrenamiento tradicional y sparring competitivo, los estudiantes desarrollan fuerza física y enfoque mental.";
-        document.getElementById("about-text7").innerText = "Azteca TKD continúa inspirando futuras generaciones mediante dedicación y pasión por la excelencia.";
-
-        document.getElementById("contact-title").innerText = "Contáctanos";
-        document.getElementById("contact-text1").innerText = "Azteca Tae Kwon Do Foundation";
-        document.getElementById("contact-text2").innerText = "8101 Long Beach Blvd., Suite E South Gate, CA 90280";
-        document.getElementById("contact-text3").innerText = "Teléfono: (323) 319-8606";
-
+        changeText("contact-title", "Contáctanos");
+        changeText("contact-text1", "Azteca Tae Kwon Do Foundation");
+        changeText("contact-text2", "8101 Long Beach Blvd., Suite E South Gate, CA 90280");
+        changeText("contact-text3", "Teléfono: (323) 319-8606");
     } else {
         location.reload();
     }
 }
-
 </script>

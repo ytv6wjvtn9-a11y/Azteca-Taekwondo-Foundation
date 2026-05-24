@@ -270,14 +270,21 @@ function setLanguage(language) {
 
         document.getElementById("schedule-title").innerText = "Horario de Clases";
         document.getElementById("regular-title").innerText = "Clases Regulares";
-        document.getElementById("regular-text1").innerText = "Lunes — 5–6 PM / 6–7 PM / 7–8 PM";
-        document.getElementById("regular-text2").innerText = "Miércoles — 5–6 PM / 6–7 PM / 7–8 PM";
-        document.getElementById("regular-text3").innerText = "Viernes — 5–6 PM / 6–7 PM / 7–8 PM";
+        document.getElementById("regular-text1").innerHTML =
+"<strong>Lunes</strong><br>5–6 PM / 6–7 PM / 7–8 PM";
+
+document.getElementById("regular-text2").innerHTML =
+"<strong>Miércoles</strong><br>5–6 PM / 6–7 PM / 7–8 PM";
+
+document.getElementById("regular-text3").innerHTML =
+"<strong>Viernes</strong><br>5–6 PM / 6–7 PM / 7–8 PM";
 
         document.getElementById("competition-title").innerText = "Sparring Competitivo";
-        document.getElementById("competition-text1").innerText = "Martes — 6–8 PM";
-        document.getElementById("competition-text2").innerText = "Jueves — 6–8 PM";
+        document.getElementById("competition-text1").innerHTML =
+"<strong>Martes</strong><br>6–8 PM";
 
+document.getElementById("competition-text2").innerHTML =
+"<strong>Jueves</strong><br>6–8 PM";
         document.getElementById("coaches-title").innerText = "Nuestros Entrenadores";
         document.getElementById("coaches-text1").innerText = "Dirigido por el Gran Maestro German López Alvarez, nuestro equipo de entrenadores está dedicado a enseñar disciplina, liderazgo, confianza y excelencia en artes marciales.";
         document.getElementById("coach-button").innerText = "Conocer Entrenadores";

@@ -643,3 +643,50 @@ button:hover {
         padding: 30px 20px;
     }
 }
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .schedule-grid,
+    .info-sections{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .info-card,
+    .competition-card,
+    .schedule-card{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .card-image,
+    .competition-image{
+        width: 100%;
+        height: auto;
+    }
+
+    .about-box{
+        width: 90%;
+        margin: auto;
+    }
+}

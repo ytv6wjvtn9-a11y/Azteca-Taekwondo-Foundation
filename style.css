@@ -575,3 +575,71 @@ button:hover {
 
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .schedule-grid,
+    .info-sections{
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .info-card{
+        width: 100%;
+    }
+
+    .card-image,
+    .competition-image{
+        height: auto;
+        width: 100%;
+    }
+
+    .about-box{
+        width: 95%;
+        padding: 30px 20px;
+        margin-left: 0;
+    }
+
+    .hero h2{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 768px) {
+
+    .info-sections {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .info-card,
+    .competition-card {
+        width: 100%;
+        display: block;
+    }
+
+    .card-image,
+    .competition-image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    .about-box {
+        width: 95%;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+}

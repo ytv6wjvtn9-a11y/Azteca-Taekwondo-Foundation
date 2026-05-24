@@ -690,3 +690,45 @@ html, body{
         margin: auto;
     }
 }
+@media (max-width: 768px){
+
+    nav,
+    .schedule,
+    .info-sections,
+    .about-section{
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .schedule-grid,
+    .info-sections{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        grid-template-columns: none !important;
+    }
+
+    .schedule-card,
+    .info-card,
+    .competition-card{
+        width: 90% !important;
+        max-width: 360px !important;
+        margin: 20px auto !important;
+    }
+
+    .card-image,
+    .competition-image{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    nav{
+        flex-direction: column !important;
+    }
+
+    nav ul{
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+}
